@@ -1,0 +1,27 @@
+{
+  "name": "hrx",
+  "version": "1.0.0",
+  "description": "JS utility to handle Mi Band HRX",
+  "main": "server.js",
+  "bin": {
+    "test-hrx": "bin/test.js"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/env-cmd -f ./.env node src/bin/test.js",
+    "start": "./node_modules/.bin/env-cmd -f ./.env node src/bin/server.js",
+    "fire": "node station/firebase.js"
+  },
+  "keywords": [
+    "miband",
+    "hrx"
+  ],
+  "dependencies": {
+    "firebase-admin": "^8.13.0",
+    "webbluetooth": "^1.0.6"
+  },
+  "author": "Mihir Jichkar",
+  "license": "MIT",
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
